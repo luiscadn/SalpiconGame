@@ -1,4 +1,4 @@
-/* Salpicón service worker — offline shell + stale-while-revalidate for assets.
+/* Coco el Cocodrilo service worker — offline shell + stale-while-revalidate for assets.
    Bump CACHE when you want every client to drop its old cache. */
 const CACHE = "salpicon-v1";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./icon-maskable.svg"];

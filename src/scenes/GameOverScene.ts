@@ -208,7 +208,7 @@ export class GameOverScene extends Phaser.Scene {
     ctx.textAlign = "center";
     ctx.fillStyle = css(C.gold);
     ctx.font = font(30);
-    ctx.fillText("SALPICON", w / 2, 62);
+    ctx.fillText("COCO EL COCODRILO", w / 2, 62);
     ctx.fillStyle = css(C.paper);
     ctx.font = font(13);
     ctx.fillText(`${name}${win ? "  ·  ¡VICTORIA!" : ""}`, w / 2, 100);
@@ -236,14 +236,14 @@ export class GameOverScene extends Phaser.Scene {
       /* duck art optional */
     }
 
-    const text = `Hice ${score.toLocaleString("es")} puntos en Salpicón (nivel ${level}, ${acc}% de puntería). ¿Puedes superarlo?`;
+    const text = `Hice ${score.toLocaleString("es")} puntos en Coco el Cocodrilo (nivel ${level}, ${acc}% de puntería). ¿Puedes superarlo?`;
     cv.toBlob(async (blob) => {
       if (!blob) return;
-      const file = new File([blob], "salpicon.png", { type: "image/png" });
+      const file = new File([blob], "coco-el-cocodrilo.png", { type: "image/png" });
       const nav = navigator as Navigator & { canShare?: (d: ShareData) => boolean };
       if (nav.canShare?.({ files: [file] })) {
         try {
-          await nav.share({ files: [file], text, title: "Salpicón" });
+          await nav.share({ files: [file], text, title: "Coco el Cocodrilo" });
           return;
         } catch {
           /* user cancelled — fall through to download */
@@ -252,7 +252,7 @@ export class GameOverScene extends Phaser.Scene {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "salpicon.png";
+      a.download = "coco-el-cocodrilo.png";
       document.body.appendChild(a);
       a.click();
       a.remove();

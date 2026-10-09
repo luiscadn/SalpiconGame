@@ -1,4 +1,4 @@
-# Salpicón — Web Arcade Game
+# Coco el Cocodrilo — Web Arcade Game
 
 Videojuego web de tiro en la marisma desarrollado en 2D con estética pixel art. El proyecto implementa una arquitectura orientada a objetos basada en escenas, generación procedural de gráficos mediante código HTML5 Canvas, síntesis de audio en tiempo real con Web Audio API y físicas de precisión arcade.
 

@@ -111,10 +111,10 @@ export class AuthScene extends Phaser.Scene {
   private title(): void {
     const cx = GAME_WIDTH / 2;
     const shadow = this.add
-      .text(cx + 5, 118, "SALPICON", { fontFamily: FONT_FAMILY, fontSize: "46px", color: css(C.rust) })
+      .text(cx + 5, 118, "COCO EL COCODRILO", { fontFamily: FONT_FAMILY, fontSize: "46px", color: css(C.rust) })
       .setOrigin(0.5);
     const main = this.add
-      .text(cx, 112, "SALPICON", { fontFamily: FONT_FAMILY, fontSize: "46px", color: css(C.gold) })
+      .text(cx, 112, "COCO EL COCODRILO", { fontFamily: FONT_FAMILY, fontSize: "46px", color: css(C.gold) })
       .setOrigin(0.5);
     this.add
       .text(cx, 158, "tiro en la marisma", { fontFamily: FONT_FAMILY, fontSize: "12px", color: css(C.paper) })

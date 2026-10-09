@@ -1,4 +1,4 @@
-# Salpicón en móvil y tiendas de apps
+# Coco el Cocodrilo en móvil y tiendas de apps
 
 El juego ya funciona en el navegador del celular y como **PWA instalable**:
 
@@ -35,7 +35,7 @@ Apple no acepta PWAs puras. Envuelve el sitio con **Capacitor**:
 
 ```bash
 npm i @capacitor/core @capacitor/ios
-npx cap init "Salpicón" com.salpicon.app --web-dir=dist
+npx cap init "Coco el Cocodrilo" com.salpicon.app --web-dir=dist
 npx cap add ios
 npm run build && npx cap sync
 npx cap open ios        # se abre Xcode: firmar, icono, y subir a App Store Connect
